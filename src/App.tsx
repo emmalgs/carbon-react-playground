@@ -1,26 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import PlayHeader from './components/Header/PlayHeader';
+import { Content } from '@carbon/react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <>
+    <PlayHeader />
+    <Content>
+      <h1>Carbon-React Playground</h1>
+      <p>Tada it's basically done!</p>
+    </Content>
+  </>
+);
 
 export default App;
